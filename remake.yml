@@ -1,0 +1,10 @@
+sources: R/paschold.R
+packages: []
+targets:
+  all:
+    depends: datasets
+  datasets:
+    depends: paschold_DE_1000
+  paschold_DE_1000:
+    command: paschold_DE(genes = 1000)
+
