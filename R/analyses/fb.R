@@ -1,7 +1,7 @@
 # library(fbseq); source("../utils/globals.R")
 
 # Fully Bayesian analysis with normals on the betas
-#' @param s Scenario object
+#' @param s fbseq::Scenario object output by dataset functions
 fb = function(s){
   con = Configs(iterations = globals("iterations"), 
     burnin = globals("burnin"), 
