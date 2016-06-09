@@ -3,7 +3,7 @@
 # Generate a small dataset using Poisson counts.
 #' @param frac_DE Fraction of differentially expressed genes.
 #' @param LFC Log fold change in expression levels of DE genes.
-poisson_DE = function(genes = 1e3, frac_DE = 0.1, LFC = 1){
+poisson_DE = function(genes = globals("genes"), frac_DE = 0.1, LFC = 1){
   s = paschold_DE(genes = genes)
   d = as.data.frame(matrix(5, nrow = genes, ncol = nrow(s@design)))
   colnames(d) = paste0("group", rep(1:2, each = nrow(s@design)/2))

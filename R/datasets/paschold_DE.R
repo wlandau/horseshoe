@@ -2,7 +2,7 @@
 
 # Generate a small version of the Paschold et al. (2012) data.
 # Use only the two parental varieties and test for differential expression.
-paschold_DE = function(genes = 1e3){
+paschold_DE = function(genes = globals("genes")){
   data(paschold)
   contrasts = list(
     high = c(beta_1 = 0, beta_2 = 1),
