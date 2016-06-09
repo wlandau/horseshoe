@@ -14,5 +14,10 @@ analyses = commands(
   fbhh = fbhh(..DATASET..)
 )
 
+summaries = commands(
+  psrf = gelman(..ANALYSIS..)
+)
+
 plan_workflow(sources = sources, packages = packages, datasets = datasets,
-  analyses = analyses, clean = "rm -rf Makefile README.html remake.yml")
+  analyses = analyses, summaries = summaries,
+  clean = "rm -rf Makefile README.html remake.yml")
