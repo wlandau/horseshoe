@@ -20,4 +20,4 @@ summaries = commands(
 
 plan_workflow(sources = sources, packages = packages, datasets = datasets,
   analyses = analyses, summaries = summaries,
-  clean = "rm -rf Makefile README.html remake.yml")
+  clean = "rm -rf err.txt Makefile out.txt README.html remake.yml")
