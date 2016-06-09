@@ -1,6 +1,6 @@
 library(workflowHelper)
 
-sources = paste0("R/", list.files("R"))
+sources = c("config.R", paste0("R/", list.files("R")))
 packages = strings(fbseq)
 
 datasets = commands(
