@@ -1,7 +1,7 @@
 library(workflowHelper)
 
 sources = c("config.R", paste0("R/", list.files("R")))
-packages = strings(fbseq)
+packages = strings(fbseq, plyr)
 
 datasets = commands(
   pascholdDE = paschold_DE(),
