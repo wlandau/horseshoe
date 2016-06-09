@@ -10,7 +10,7 @@ datasets = commands(
 
 analyses = commands(
   fb = fb(..DATASET..),
-  fbnh = fbnh(..DATASET..),
+  fbh = fbh(..DATASET..),
   fbhh = fbhh(..DATASET..)
 )
 

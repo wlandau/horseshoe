@@ -3,7 +3,7 @@
 # Fully Bayesian analysis with horseshoe distributions all all the
 # betas except beta_1
 #' @param s fbseq::Scenario object output by dataset functions
-fbnh = function(s){
+fbh = function(s){
   con = Configs(iterations = globals("iterations"), 
     burnin = globals("burnin"), 
     thin = globals("thin"),
