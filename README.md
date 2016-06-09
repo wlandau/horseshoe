@@ -6,4 +6,4 @@ This repo uses the [`workflowHelper`](https://github.com/wlandau/workflowHelper)
 
 1. Run the script `workflow.R` to create a [`Makefile`](https://www.gnu.org/software/make/).
 2. Optionally, configure simulation parameters with the small functions in `config.R`.
-3. Run `make`.
+3. Run `make`. If you're on a cluster, you can use `job.sh`.
