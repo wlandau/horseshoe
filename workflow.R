@@ -10,15 +10,15 @@ datasets = commands(
 )
 
 analyses = commands(
-  fb = fb(..DATASET..),               # fully Bayes, normal betas
-  fbh = fbh(..DATASET..),             # fully Bayes, horseshoe betas except beta_1
-  fbhh = fbhh(..DATASET..),           # fully Bayes, all horseshoe
-  fixtheta1 = fixtheta1(..DATASET..), # like fbh  except theta is not updated
-  fixtheta2 = fixtheta1(..DATASET..)  # like fbhh except theta is not updated
+  fb = fb(..dataset..),               # fully Bayes, normal betas
+  fbh = fbh(..dataset..),             # fully Bayes, horseshoe betas except beta_1
+  fbhh = fbhh(..dataset..),           # fully Bayes, all horseshoe
+  fixtheta1 = fixtheta1(..dataset..), # like fbh  except theta is not updated
+  fixtheta2 = fixtheta1(..dataset..)  # like fbhh except theta is not updated
 )
 
 summaries = commands(
-  psrf = gelman(..ANALYSIS..)
+  psrf = gelman(..analysis..)
 )
 
 plan_workflow(sources = sources, packages = packages, datasets = datasets,
